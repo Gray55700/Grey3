@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MASTER-TRADING</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      font-family: Trebuchet MS;
+      background: linear-gradient(to right, #ff7e5f, #feb47b);
+      margin: 0;
+      padding: 0;
+    }
+    h5 {
+      text-align: center;
+      font-family: Trebuchet MS;
+      font-size: 20px;
+    }
+            .fa-certificate {
+            color: blue;
+        }
+        .certified {
+            font-weight: bold;
+        }
+    header {
+      background-color: #004D40;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    header h1 {
+      margin: 0;
+      padding: 5px;
+      font-size: 20px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .logo svg {
+      width: 32px;
+      height: 32px;
+      fill: rgba(238, 251, 4, 1);
+      margin-right: 10px;
+    }
+    nav {
+      background-color: #E65100;
+      color: white;
+      padding: 10px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    nav ul li {
+      margin: 5px;
+    }
+    nav ul li a {
+      display: flex;
+      align-items: center;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    nav ul li a .fa {
+      margin-right: 5px;
+    }
+    nav ul li a:hover {
+      background-color: #111;
+    }
+    .content {
+      padding: 20px;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 18px;
+      }
+      nav ul li a {
+        padding: 8px;
+        font-size: 12px;
+      }
+      .content {
+        padding: 10px;
+      }
+    }
+    h3 {
+      text-align: center;
+      background-color: #F57C00;
+    }
+    table {
+      width: 50%;
+      border-collapse: collapse;
+      margin: 20px auto;
+    }
+    table, th, td {
+      border: 2px solid black;
+    }
+    th, td {
+      padding: 5px;
+      text-align: center;
+    }
+    .whatsapp-button {
+      background-color: #25D366;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      margin: 5px 10px;
+      cursor: pointer;
+      border-radius: 7px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" style="fill: rgba(238, 251, 4, 1);">
+        <path d="M8 13v4H6v2h3v2h2v-2h2v2h2v-2.051c1.968-.249 3.5-1.915 3.5-3.949 0-1.32-.65-2.484-1.64-3.213A3.982 3.982 0 0 0 18 9c0-1.858-1.279-3.411-3-3.858V3h-2v2h-2V3H9v2H6v2h2v6zm6.5 4H10v-4h4.5c1.103 0 2 .897 2 2s-.897 2-2 2zM10 7h4c1.103 0 2 .897 2 2s-.897 2-2 2h-4V7z"></path>
+      </svg>
+      <h1><strong><i class="fa fa-mortar-board"></i> MASTER TRADING</strong>  <i class="fa fa-certificate"></i> <i class="fa fa-send"></i></h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#accueil" id="accueil-link"><i class="fa fa-line-chart"></i> Accueil</a></li>
+        <li><a href="#investir" id="investir-link"><i class="fa fa-vcard"></i> Investir</a></li>
+        <li><a href="#condition" id="service-link"><i class="fa fa-warning"></i> Condition</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="content" id="content">
+        <h4>BIENVENUE(E) SUR MASTER TRADING, VOTRE DESTINATION POUR TOUS VOS BESOIN EN INVESTISSEMENTS ET TRADING. VOUS POUVEZ COMMENCE À CONSULTER NOS MENU ACCUEIL , INVESTIR ET CONDITIONS D'UTILISATION ! LÀ OÙ VOUS ALLEZ CHANGER LE MONDE AVEC NOUS ET NOUS AIDÉ À AMÉLIORER NOTRE PAGE <i class="fa fa-newspaper-o"></i></h4>
+    </div>
+    <hr>
+    <h5>© MASTER TRADING </h5>
+    <hr>
+  <script>
+    document.getElementById('accueil-link').addEventListener('click', function(event) {
+      event.preventDefault();
+      document.getElementById('content').innerHTML = `
+        <img src="https://i.ibb.co/4gKqcbF/image.jpg" alt="bitcoin" style="max-width: 100%; height: auto;">
+        <hr>
+        <h2>SOYEZ LES BIENVENUES(E) SUR MASTER TRADING <i class="fa fa-graduation-cap"></i> AVANT DE (EXPLORER LE MONDE DU TRADING) COMMENCE PAR LIRES NOS POLITIQUES DE CONFIDENTIALITÉ ! <i class="fa fa-warning"></i></h2>
+        <hr>
+        <p>Bien-que vous avez fini de lire nos condition, nous pouvons commencer ensemble à lire et a explorer le monde du <strong>TRADING <i class="fa fa-graduation-cap"></i></strong></p>
+        <img src="https://i.ibb.co/QfDBcwc/image.jpg" alt="bitcoin" style="max-width: 100%; height: auto;">
+        <hr>
+        <p>
+          <strong><u>LE MASTER TRADING <i class="fa fa-graduation-cap"></i> </u> : est une activité financière qui consiste à acheter et vendre des actifs financiers tels que des actions, des devises (forex), des matières premières, des obligations, et autres instruments financiers sur des marchés financiers. L'objectif du trading est de réaliser un profit en exploitant les fluctuations de prix des actifs.</strong>
+        </p>
+        <hr>
+        <p><strong><u></u>QUELS SONT LES PRINCIPAUX CLÉ DU MASTER TRADING ? <i class="fa fa-frown-o"></i></u></strong></p>
+        <img src="https://i.ibb.co/w7kZmt0/image.jpg" alt="bitcoin" style="max-width: 100%; height: auto;">
+        <ul>
+          <li>Achat et vente d'actif.</li>
+          <li>Spéculation.</li>
+          <li>Horizon Temporel.</li>
+          <li>Analyse Technique et Fondamentale.</li>
+          <li>Risques et gestion des risques.</li>
+        </ul>
+        <p><strong>Achat et vente d'actifs :</strong> Les traders achètent des actifs à un prix donné dans l'espoir que leur valeur augmente, leur permettant de les revendre à un prix plus élevé.</p>
+        <p><strong>Spéculation :</strong> Le trading repose souvent sur la spéculation quant à la direction future des prix des actifs. Les traders essaient de prévoir les mouvements du marché pour prendre des décisions d'achat ou de vente.</p>
+        <p><strong>Horizon temporel :</strong> Les stratégies de trading peuvent varier considérablement en fonction de l'horizon temporel des transactions. Cela peut aller de quelques secondes (trading haute fréquence) à plusieurs années (trading à long terme).</p>
+        <img src="https://i.ibb.co/gPP64Rk/image.jpg" alt="bitcoin" style="max-width: 100%; height: auto;">
+        <p><strong>Analyse technique et fondamentale :</strong> Les traders utilisent généralement l'analyse technique (étude des graphiques et des indicateurs techniques) et/ou l'analyse fondamentale (évaluation des facteurs économiques et financiers) pour prendre leurs décisions.</p>
+        <p><strong>Risques et gestion des risques :</strong> Le trading comporte des risques importants, notamment le risque de perte en capital. Une gestion efficace des risques est essentielle pour limiter les pertes potentielles et protéger le capital investi.</p>
+        <hr>
+        <img src="https://i.ibb.co/3C0F2X7/image.jpg" alt="bitcoin" style="max-width: 100%; height: auto;">
+      <p>
+          <em>
+            <strong>
+            <mark>En résumé,</mark> le trading est une activité complexe qui nécessite des compétences en analyse, une compréhension approfondie des marchés financiers et une gestion rigoureuse des risques. Les traders professionnels et amateurs peuvent utiliser diverses stratégies pour atteindre leurs objectifs financiers, mais il est important de se rappeler que le trading comporte toujours un certain niveau de risque.</strong>
+          </em>
+        </p>
+        <h3>© MASTER TRADING</h3>
+      `;
+    });
+
+    document.getElementById('investir-link').addEventListener('click', function(event) {
+      event.preventDefault();
+      document.getElementById('content').innerHTML = `
+        <img src="https://i.ibb.co/8dGCN3n/image.jpg" alt="bitcoin" style="max-width: 100%; height: auto;">
+        <h2 class="underline"><strong>BIENVENUE SUR MASTER TRADING  <i class="fa fa-certificate"></i></strong></h2>
+        <p>LE TRADING est l’un des métiers rares par lequel vous pouvez vous faire facilement du 100% voire plus sur votre capital de base.</p>
+        <hr>
+        <p>
+          <strong><u>Pourquoi investir avec nous ?</u></strong>
+          <ul>
+            <li>Expertise et conseils personnalisés</li>
+            <li>Plateforme sécurisée et fiable</li>
+            <li>Retours sur investissement élevés</li>
+            <li>Suivi et support 24/7</li>
+          </ul>
+        </p>
+        <img src="https://i.ibb.co/4gKqcbF/image.jpg" alt="investment" style="max-width: 100%; height: auto;">
+        <p>
+          <strong>Nos offres d'investissement :</strong>
+          <ul>
+            <li>Compte d'essai gratuit</li>
+            <li>Investissement à court terme</li>
+            <li>Investissement à long terme</li>
+            <li>Gestion de portefeuille</li>
+          </ul>
+        </p>
+        <hr>
+        <p>
+          <em>
+            <strong>
+            <mark>En résumé,</mark> investir avec MASTER TRADING, c'est choisir la voie de la réussite financière avec un partenaire de confiance.
+            </strong>
+          </em>
+        </p>
+        <img src="https://i.ibb.co/3C0F2X7/image.jpg" alt="investment" style="max-width: 100%; height: auto;">
+        <p><i>
+        JE COMMENCE A INVESTIRE, DÈS MAINTENANT <strong><mark>NB: SI VOUS COMMENCE À INVESTIR DÈS AUJOURD'HUI VOUS BÉNÉFICIER DE 20% DE REMISE SUR VOTRE COMPTE !</mark></strong></i></p>
+        <hr>
+        <h3><strong> TABLEAU TARIFAIRE </strong></h3>
+      <table> 
+      <img src="https://i.ibb.co/XkVY4c6/image.jpg" alt="bitcoin" style="max-width: 100%; height: auto;">
+                    <thead> 
+                        <tr> 
+                            <th>MONTANT <i class="fa fa-university"></i></th> 
+                            <th>DURÉE <i class="fa fa-spinner fa-spin"></i></i></th> 
+                            <th>RETOUR <i class="fa fa-reply"></i></th>
+                            <th>INVESTIR <i class="fa fa-spinner fa-pulse"></i></th> 
+                        </tr>
+                    </thead> 
+                    <tbody> 
+                        <tr> 
+                            <td>20$</td> 
+                            <td>1h</td> 
+                            <td>200$</td> 
+                            <td><a href="https://wa.me/243814329490" target="_blank" class="whatsapp-button">Investir<i class="fa fa-send"></i></a></td> 
+                        </tr> 
+                        <tr> 
+                            <td>30$</td> 
+                            <td>1h</td> 
+                            <td>350$</td> 
+                            <td><a href="https://wa.me/243814329490" target="_blank" class="whatsapp-button">Investir<i class="fa fa-send"></i></a></td> 
+                        </tr> 
+                        <tr> 
+                            <td>40$</td> 
+                            <td>1h</td> 
+                            <td>450$</td> 
+                            <td><a href="https://wa.me/243814329490" target="_blank" class="whatsapp-button">Investir<i class="fa fa-send"></i></a></td> 
+                        </tr> 
+                        <tr> 
+                            <td>100$</td> 
+                            <td>1h</td> 
+                            <td>1050$</td> 
+                            <td><a href="https://wa.me/243814329490" target="_blank" class="whatsapp-button">Investir<i class="fa fa-send"></i></a></td> 
+                        </tr> 
+                        <tr> 
+                            <td>200$</td> 
+                            <td>1h</td> 
+                            <td>2350$</td> 
+                            <td><a href="https://wa.me/243814329490" target="_blank" class="whatsapp-button">Investir<i class="fa fa-send"></i></a></td> 
+                        </tr> 
+                        <tr> 
+                            <td>300$</td> 
+                            <td>1h</td>
+                            <td>3720$</td> 
+                            <td><a href="https://wa.me/243814329490" target="_blank" class="whatsapp-button">Investir<i class="fa fa-send"></i></a></td> 
+                        </tr> 
+                        <tr> 
+                            <td>500$</td> 
+                            <td>1h</td> 
+                            <td>6040$</td> 
+                            <td><a href="https://wa.me/243814329490" target="_blank" class="whatsapp-button">Investir<i class="fa fa-send"></i></a></td> 
+                        </tr> 
+                        <tr> 
+                            <td>100$</td> 
+                            <td>2h</td> 
+                            <td>1050$</td> 
+                            <td><a href="https://wa.me/243814329490" target="_blank" class="whatsapp-button">Investir<i class="fa fa-send"></i></a></td> 
+                        </tr> 
+                        <tr> 
+                            <td>200$</td> 
+                            <td>3h</td> 
+                            <td>2350$</td> 
+                            <td><a href="https://wa.me/243814329490" target="_blank" class="whatsapp-button">Investir<i class="fa fa-send"></i></a></td> 
+                        </tr> 
+                        <tr> 
+                            <td>300$</td> 
+                            <td>3h</td> 
+                            <td>3720$</td> 
+                            <td><a href="https://wa.me/243814329490" target="_blank" class="whatsapp-button">Investir<i class="fa fa-send"></i></a></td> 
+                        </tr> 
+                        <tr> 
+                            <td>500$</td> 
+                            <td>4h</td> 
+                            <td>6040$</td> 
+                            <td><a href="https://wa.me/243814329490" target="_blank" class="whatsapp-button">Investir<i class="fa fa-send"></i></a></td> 
+                        </tr> 
+                    </tbody> 
+                </table>
+                <h3>© MASTER TRADING</h3>
+      `;
+    });
+
+        document.getElementById('service-link').addEventListener('click', function(event) {
+      event.preventDefault();
+      document.getElementById('content').innerHTML = `
+        <img src="https://i.ibb.co/4gKqcbF/image.jpg" alt="bitcoin" style="max-width: 100%; height: auto;">
+        <hr>
+        <h2><strong>Conditions d'utilisation</strong></h2>
+        <p>Bienvenue chez MASTER TRADING. Avant d'utiliser nos services, nous vous prions de lire attentivement nos conditions d'utilisation et politiques de confidentialité. Ces documents contiennent des informations importantes sur vos droits et obligations en tant qu'utilisateur.</p>
+        <hr>
+        <p><strong>Responsabilité :</strong> MASTER TRADING ne peut être tenu responsable des pertes financières subies suite à l'utilisation de nos services. Le trading comporte des risques importants et nécessite une gestion prudente des risques.</p>
+        <p><strong>Confidentialité :</strong> Nous nous engageons à protéger vos données personnelles et à respecter votre vie privée. Consultez notre politique de confidentialité pour plus d'informations.</p>
+        <hr>
+        <img src="https://i.ibb.co/QfDBcwc/image.jpg" alt="bitcoin" style="max-width: 100%; height: auto;">
+        <p><em><strong>En utilisant nos services, vous acceptez ces conditions et reconnaissez les risques associés au trading.</strong></em></p>
+        <hr>
+        <p>
+          <strong><u>Politique de confidentialité :</u></strong>
+          <ul>
+            <li>Collecte et utilisation des données</li>
+            <li>Protection des informations personnelles</li>
+            <li>Droits des utilisateurs</li>
+            <li>Cookies et technologies similaires</li>
+            <li>Modifications de la politique de confidentialité</li>
+          </ul>
+        </p>
+        <img src="https://i.ibb.co/Y3G5SJj/image.jpg" alt="privacy" style="max-width: 100%; height: auto;">
+        <h3>© MASTER TRADING</h3>
+      `;
+    });
+  </script>
+</body>
+</html>
